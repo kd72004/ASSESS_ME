@@ -1,0 +1,525 @@
+{
+  "v": 6,
+  "name": "final API CALL",
+  "folders": [],
+  "requests": [
+    {
+      "v": "11",
+      "name": "signup",
+      "method": "POST",
+      "endpoint": "http://localhost:3000/auth/login",
+      "params": [],
+      "headers": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": " {\n    \"email\": \"updated@test.com\",\n    \"password\": \"password123\" \n}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "user/all",
+      "method": "GET",
+      "endpoint": "http://localhost:3000/user/all",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVwZGF0ZWRAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0MzkwNjEwMiwiZXhwIjoxNzQzOTkyNTAyfQ.FkX39rqEVkiOMHus0kRzz2NpWNsl087gRZX9G-nvRag",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/auth/login",
+      "method": "POST",
+      "endpoint": "http://localhost:3000/auth/signup",
+      "params": [],
+      "headers": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n    \"name\": \"kalyani\",\n    \"email\": \"kalyani@123.com\",\n    \"password\": \"123@123\"\n    \n}\n"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/user/id",
+      "method": "GET",
+      "endpoint": "http://localhost:3000/user/67efaa973669b0a35224acc2",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTUyNSwiZXhwIjoxNzQzODQ3OTI1fQ.QPaNfgS74PxuFI6p_5pcAWjM5Z97TG4wPgjVa3O_FTc",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/user/id",
+      "method": "PUT",
+      "endpoint": "http://localhost:3000/user/update/67efaa973669b0a35224acc2",
+      "params": [],
+      "headers": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n    \"name\": \"TESTING TEACHER\",\n    \"email\": \"updated@test.com\",\n    \"role\": \"teacher\"\n}\n"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/exam/create-exam",
+      "method": "POST",
+      "endpoint": "http://localhost:3000/exam/create-exam",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthbHlhbmlAMTIzLmNvbSIsIl9pZCI6IjY3ZjhlOWU2N2U3ZGI1YzA5NTk0Nzg0MyIsIm5hbWUiOiJrYWx5YW5pIiwiaWF0IjoxNzQ0MzY2NDcxLCJleHAiOjE3NDQ0NTI4NzF9.A-L3UCqKkB1yFYPQT2ae7NjM5hyGD9DjyzbkyyaoFbs",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n    \"examName\": \"Software Engineering CIA 1\",\n    \"subject\": \"UML\",\n    \"startDate\": \"2024-01-19\",\n    \"endDate\": \"2024-01-19\",\n    \"startTime\": \"2024-01-19T14:00:00Z\",\n    \"endTime\": \"2024-01-19T16:00:00Z\",\n    \"duration\": 10,\n    \"totalMarks\": 50,\n    \"numberOfQuestions\": 5,\n    \"instructions\": \"Please read all questions carefully. No negative marking.\",\n    \"passingMarks\": 20,\n    \"isActive\": true,\n    \"isAIGenerated\": false,\n    \"createdBy\": \"67f8e9e67e7db5c095947843\"\n}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/exam/all",
+      "method": "GET",
+      "endpoint": "http://localhost:3000/exam/all",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTAxOCwiZXhwIjoxNzQzODQ3NDE4fQ.IPSy2pvGAOPJk7vKFatUwRnuXJaIG9FEbXT0fYpTp4U",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/exam/id",
+      "method": "GET",
+      "endpoint": "http://localhost:3000/exam/67efc786f38e0648635195a1",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTAxOCwiZXhwIjoxNzQzODQ3NDE4fQ.IPSy2pvGAOPJk7vKFatUwRnuXJaIG9FEbXT0fYpTp4U",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/exam/delete-exam/;id",
+      "method": "DELETE",
+      "endpoint": "http://localhost:3000/exam/delete-exam/67efc5d3c1b9d9d818f1cb1e",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTAxOCwiZXhwIjoxNzQzODQ3NDE4fQ.IPSy2pvGAOPJk7vKFatUwRnuXJaIG9FEbXT0fYpTp4U",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/exam/update-exam/:id",
+      "method": "PUT",
+      "endpoint": "http://localhost:3000/exam/update-exam/67efc786f38e0648635195a1",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTAxOCwiZXhwIjoxNzQzODQ3NDE4fQ.IPSy2pvGAOPJk7vKFatUwRnuXJaIG9FEbXT0fYpTp4U",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n    \"examName\": \" Fundamentals\",\n    \"subject\": \"Programming\",\n    \"startDate\": \"2024-03-20T00:00:00.000Z\",\n    \"endDate\": \"2024-03-20T00:00:00.000Z\",\n    \"startTime\": \"2024-03-20T10:00:00.000Z\",\n    \"endTime\": \"2024-03-20T12:00:00.000Z\",\n    \"duration\": 120,\n    \"totalMarks\": 100,\n    \"numberOfQuestions\": 50,\n    \"instructions\": \"Please read all questions carefully. No negative marking.\",\n    \"passingMarks\": 40,\n    \"isActive\": true,\n    \"isAIGenerated\": false\n}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/exam/active",
+      "method": "GET",
+      "endpoint": "http://localhost:3000/exam/active",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTAxOCwiZXhwIjoxNzQzODQ3NDE4fQ.IPSy2pvGAOPJk7vKFatUwRnuXJaIG9FEbXT0fYpTp4U",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/question/create/:examid",
+      "method": "POST",
+      "endpoint": "http://localhost:3000/question/create/67f8ecda7e7db5c09594784c",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthbHlhbmlAMTIzLmNvbSIsIl9pZCI6IjY3ZjhlOWU2N2U3ZGI1YzA5NTk0Nzg0MyIsIm5hbWUiOiJrYWx5YW5pIiwiaWF0IjoxNzQ0MzY2NDcxLCJleHAiOjE3NDQ0NTI4NzF9.A-L3UCqKkB1yFYPQT2ae7NjM5hyGD9DjyzbkyyaoFbs",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n    \"questionData\": [\n        {\n            \"questionText\": \"What is UML?\",\n            \"questionTopic\": \"UML Basics\",\n            \"queType\": \"MCQ\",\n            \"options\": [\n                \"Unified Modeling Language\",\n                \"Universal Markup Language\",\n                \"Unified Markup Logic\",\n                \"Universal Modeling Logic\"\n            ],\n            \"correctAnswer\": \"Unified Modeling Language\"\n        },\n        {\n            \"questionText\": \"Which UML diagram is best for showing class relationships?\",\n            \"questionTopic\": \"Class Diagrams\",\n            \"queType\": \"MCQ\",\n            \"options\": [\n                \"Class Diagram\",\n                \"Sequence Diagram\",\n                \"Use Case Diagram\",\n                \"Activity Diagram\"\n            ],\n            \"correctAnswer\": \"Class Diagram\"\n        },\n        {\n            \"questionText\": \"What is the primary purpose of Sequence Diagrams?\",\n            \"questionTopic\": \"Sequence Diagrams\",\n            \"queType\": \"MCQ\",\n            \"options\": [\n                \"Show class structure\",\n                \"Show object interactions over time\",\n                \"Show system states\",\n                \"Show system components\"\n            ],\n            \"correctAnswer\": \"Show object interactions over time\"\n        },\n        {\n            \"questionText\": \"Explain the concept of inheritance in UML class diagrams.\",\n            \"questionTopic\": \"Class Relationships\",\n            \"queType\": \"ShortAnswer\",\n            \"correctAnswer\": \"Inheritance in UML represents an 'is-a' relationship where a child class inherits attributes and methods from a parent class, shown by a solid line with a hollow triangle pointing to the parent class.\"\n        },\n        {\n            \"questionText\": \"What are the main components of a Use Case Diagram?\",\n            \"questionTopic\": \"Use Case Diagrams\",\n            \"queType\": \"ShortAnswer\",\n            \"correctAnswer\": \"The main components are actors (users), use cases (system functions), system boundary (rectangle), and relationships (lines showing interactions between actors and use cases).\"\n        }\n    ]\n}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/question/:examid",
+      "method": "GET",
+      "endpoint": "http://localhost:3000/question/67efc786f38e0648635195a1",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTAxOCwiZXhwIjoxNzQzODQ3NDE4fQ.IPSy2pvGAOPJk7vKFatUwRnuXJaIG9FEbXT0fYpTp4U",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/question/update/examid",
+      "method": "PUT",
+      "endpoint": "http://localhost:3000/question/update/67efc786f38e0648635195a1",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTAxOCwiZXhwIjoxNzQzODQ3NDE4fQ.IPSy2pvGAOPJk7vKFatUwRnuXJaIG9FEbXT0fYpTp4U",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "// PUT /question/update/67efc786f38e0648635195a1\n{\n    \"questionNumber\": 1,\n    \"updates\": {\n        \"questionText\": \"What is 3 + 3?\",\n        \"options\": [\n            {\n                \"_id\": \"67eff4e27a6c4bc8f3cfbb11\",\n                \"optionText\": \"5\",\n                \"isCorrect\": false\n            },\n            {\n                \"_id\": \"67eff4e27a6c4bc8f3cfbb12\",\n                \"optionText\": \"6\",\n                \"isCorrect\": true\n            },\n            {\n                \"_id\": \"67eff4e27a6c4bc8f3cfbb13\",\n                \"optionText\": \"7\",\n                \"isCorrect\": false\n            }\n        ]\n    }\n}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/discussion/create",
+      "method": "POST",
+      "endpoint": "http://localhost:3000/discussion/create",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTAxOCwiZXhwIjoxNzQzODQ3NDE4fQ.IPSy2pvGAOPJk7vKFatUwRnuXJaIG9FEbXT0fYpTp4U",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n    \"examId\": \"67efc786f38e0648635195a1\",\n  \t\"studentId\":\"67d8dd64d789c815073cc49b\",\n    \"text\": \"Can someone explain question 3?\"\n}\n\n"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/discussion/:examid",
+      "method": "GET",
+      "endpoint": "http://localhost:3000/discussion/67efc786f38e0648635195a1",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTAxOCwiZXhwIjoxNzQzODQ3NDE4fQ.IPSy2pvGAOPJk7vKFatUwRnuXJaIG9FEbXT0fYpTp4U",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/discussion/id",
+      "method": "DELETE",
+      "endpoint": "http://localhost:3000/discussion/67effaf0c21311ad1afeffca",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlYWNoZXJAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzc2MTAxOCwiZXhwIjoxNzQzODQ3NDE4fQ.IPSy2pvGAOPJk7vKFatUwRnuXJaIG9FEbXT0fYpTp4U",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/ai-question/generate",
+      "method": "POST",
+      "endpoint": "http://localhost:3000/ai-question/generate",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVwZGF0ZWRAdGVzdC5jb20iLCJfaWQiOiI2N2VmYWE5NzM2NjliMGEzNTIyNGFjYzIiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc0Mzk0NzE0NSwiZXhwIjoxNzQ0MDMzNTQ1fQ.jbhJsHLU9mww6ERRpX_DKJoiMPyD63H78Z4B-z6EqzU",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n    \"examId\": \"67efc786f38e0648635195a1\",\n    \"aiResponse\": {\n        \"candidates\": [\n            {\n                \"content\": {\n                    \"parts\": [\n                        {\n                            \"text\": \"Question 1: If a network technician installs 32 computers on Monday and 15 computers on Tuesday, how many computers were installed in total?\\na) 45 b) 47 (Correct) c) 50 d) 27\\n\\nQuestion 2: A network switch has 48 ports. If 13 ports are currently in use, how many ports are available?\\na) 61 b) 35 (Correct) c) 30 d) 40\\n\\nQuestion 3: A company has 5 network segments, each with 20 users. How many users are on the network in total?\\na) 100 (Correct) b) 25 c) 15 d) 80\\n\\nQuestion 4: A server has 500 GB of storage. If 100 GB is used, what percentage of storage is still available?\\na) 20% b) 40% c) 80% (Correct) d) 60%\\n\\nQuestion 5: If it takes 3 minutes to configure one router, how long will it take to configure 12 routers?\\na) 4 minutes b) 36 minutes (Correct) c) 15 minutes d) 9 minutes\\n\"\n                        }\n                    ]\n                }\n            }\n        ]\n    }\n}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/gemini",
+      "method": "POST",
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAYglf4vywoUI4v_w-gRUp3wJcfukVsn88",
+      "params": [],
+      "headers": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Create 5 netwrking questions with multiple choice answers. Each question should test basic arithmetic (addition, subtraction, multiplication, division).Format each question exactly like this: Question 1: [Write the math problem here]a) [option]b) [option]c) [option]d) [option]Add (Correct) after the right answer.Leave one blank line between questions.Make sure please dont add anythign else in reponse \"\n        }\n      ]\n    }\n  ]\n}\n"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "/submit/exam/user",
+      "method": "POST",
+      "endpoint": "http://localhost:3000/result/submit/67f8ecda7e7db5c09594784c/67f8e9e67e7db5c095947843",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthbHlhbmlAMTIzLmNvbSIsIl9pZCI6IjY3ZjhlOWU2N2U3ZGI1YzA5NTk0Nzg0MyIsIm5hbWUiOiJrYWx5YW5pIiwiaWF0IjoxNzQ0MzY2NDcxLCJleHAiOjE3NDQ0NTI4NzF9.A-L3UCqKkB1yFYPQT2ae7NjM5hyGD9DjyzbkyyaoFbs",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n    \"responses\": [\n        {\n            \"questionNumber\": 1,\n            \"selectedAnswer\": \"Unified Modeling Language\"\n        },\n        {\n            \"questionNumber\": 2,\n            \"selectedAnswer\": \"Class Diagram\"\n        },\n        {\n            \"questionNumber\": 3,\n            \"selectedAnswer\": \"Show object interactions over time\"\n        },\n        {\n            \"questionNumber\": 4,\n            \"selectedAnswer\": \"Inheritance is just a way to show relationships between classes\"\n        },\n        {\n            \"questionNumber\": 5,\n            \"selectedAnswer\": \"The main components are actors, use cases, and system boundary\"\n        }\n    ]\n}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    }
+  ],
+  "auth": {
+    "authType": "none",
+    "authActive": true
+  },
+  "headers": [],
+  "_ref_id": "coll_m92lw0lk_136fa141-7a19-4394-bbd0-9eb4c9f4a238"
+}
